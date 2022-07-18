@@ -20,4 +20,31 @@
       }
     }
   }
+  &__links {
+    font-size: $font-med;
+    a {
+      font-size: $font-small;
+      color: $grayishBlue;
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+  &__cta {
+    font-size: $font-small;
+    color: white;
+  }
+}
+
+// visibility
+.hide-for-mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(large) {
+    display: none;
+  }
 }
